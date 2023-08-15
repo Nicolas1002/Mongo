@@ -1,0 +1,15 @@
+use('Platzi-Store')
+
+db.inventory.updateMany(
+  {},
+  {
+    $pull:{
+      tags:{
+        $in: ["book", "appliance"]
+      }
+
+
+    }
+
+  }
+)

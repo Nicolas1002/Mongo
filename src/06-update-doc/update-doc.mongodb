@@ -1,0 +1,12 @@
+use('Platzi-Store')
+
+db.Products.updateOne({_id:2},
+  {
+    $set: {
+      name: 'Change Name',
+      price: 3002,
+      tags: ['A', 'B', 'C']
+    }
+  }
+  )
+db.Products.find()

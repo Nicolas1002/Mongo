@@ -1,0 +1,8 @@
+use('Platzi-Store')
+
+// db.inventory.find({ 'qty' : { $in: [25 , 15 ] } })
+// db.inventory.find({ 'qty' : { $nin: [25 , 15 ] } })
+// db.inventory.find({ 'tags' : { $all: ['book', 'school'   ] } })
+// db.inventory.find({ 'tags' : { $size: 3    } })
+db.survey.find({ 'results' : { $elemMatch: { 'product' : 'xyz', 'score': 5}    } })
+

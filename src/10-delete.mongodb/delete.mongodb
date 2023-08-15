@@ -1,0 +1,3 @@
+use("Platzi-Store")
+
+db.Products.deleteMany({price:100})

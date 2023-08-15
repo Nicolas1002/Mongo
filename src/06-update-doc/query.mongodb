@@ -1,0 +1,2 @@
+use('Platzi-Store')
+db.Products.find()

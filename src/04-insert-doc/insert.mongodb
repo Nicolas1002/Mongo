@@ -1,0 +1,9 @@
+use("Platzi-Store")
+db.Products.insertOne({
+  name: "Product 1",
+  price: 1200
+})
+db.Products.insertMany({
+  name: "Product 2",
+  price: 1500
+})
